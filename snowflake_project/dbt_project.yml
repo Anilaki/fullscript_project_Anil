@@ -1,0 +1,29 @@
+name: snowflake_project
+
+models:
+  customer_dimension:
+    schema: public
+    enabled: true
+    materialized: table
+
+  orders_fact:
+    schema: public
+    enabled: true
+    materialized: table
+
+seeds:
+  my_seed:
+    enabled: true
+
+
+tests:
+  my_tests:
+    enabled: true
+
+snapshot-paths: ['snapshots']
+
+on-run-start:
+  - echo 'Starting dbt run...'
+
+on-run-end:
+  - echo 'Finished dbt run.'

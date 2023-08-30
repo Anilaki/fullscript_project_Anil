@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: orders_fact
+
+tests:
+  - unique: ['order_id']
+  - not_null: ['customer_id', 'order_date', 'order_total', 'shipping_priority', 'shipping_address', 'shipping_city', 'shipping_state', 'shipping_zip']

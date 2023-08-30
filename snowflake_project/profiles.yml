@@ -1,0 +1,13 @@
+snowflake_project:
+  # Config indicated by + and applies to all files under models/example/
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: mx93582.snowflakecomputing.com
+      user: ANILAKI
+      password: Anil.143
+      role: ACCOUNTADMIN
+      database: DBT_LOAD
+      warehouse: COMPUTE_WH
+      schema: PUBLIC

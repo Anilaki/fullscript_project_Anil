@@ -1,0 +1,39 @@
+
+version: 2
+
+models:
+  - name: customer_dimension
+    description: "A dimension table containing customer information."
+    columns:
+      - name: customer_id
+        description: "The unique identifier for the customer."
+      - name: customer_name
+        description: "The name of the customer."
+      - name: customer_address
+        description: "The address of the customer."
+      - name: customer_city
+        description: "The city where the customer lives."
+      - name: customer_state
+        description: "The state where the customer lives."
+      - name: customer_zip
+        description: "The zip code where the customer lives."
+        
+  - name: orders_fact
+    description: "A fact table containing order information."
+    columns:
+      - name: order_id
+        description: "The unique identifier for the order."
+      - name: customer_id
+        description: "The identifier of the customer who placed the order."
+      - name: order_date
+        description: "The date the order was placed."
+      - name: order_total
+        description: "The total amount of the order."
+      - name: shipping_address
+        description: "The shipping address for the order."
+      - name: shipping_city
+        description: "The city where the order is being shipped to."
+      - name: shipping_state
+        description: "The state where the order is being shipped to."
+      - name: shipping_zip
+        description: "The zip code where the order is being shipped to."
