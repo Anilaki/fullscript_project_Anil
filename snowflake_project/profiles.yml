@@ -4,8 +4,8 @@ snowflake_project:
   outputs:
     dev:
       type: snowflake
-      account: mx93582.snowflakecomputing.com
-      user: ANILAKI
+      account: https://nxbevjd-mx93582.snowflakecomputing.com
+      user: Anilaki
       password: Anil.143
       role: ACCOUNTADMIN
       database: DBT_LOAD

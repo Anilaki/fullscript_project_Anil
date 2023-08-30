@@ -5,4 +5,4 @@ models:
 
 tests:
   - unique: ['order_id']
-  - not_null: ['customer_id', 'order_date', 'order_total', 'shipping_priority', 'shipping_address', 'shipping_city', 'shipping_state', 'shipping_zip']
+  - not_null: ['customer_id', 'order_date', 'order_total', 'order_priority', 'order_status']

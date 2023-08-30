@@ -2,12 +2,12 @@ name: snowflake_project
 
 models:
   customer_dimension:
-    schema: public
+    schema: tpch_sf1
     enabled: true
     materialized: table
 
   orders_fact:
-    schema: public
+    schema: tpch_sf1
     enabled: true
     materialized: table
 
