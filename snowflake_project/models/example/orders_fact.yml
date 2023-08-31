@@ -1,0 +1,7 @@
+version: 2
+
+tests:
+  - name: unique_order_ids
+    description: 'ensure order ids are unique.'
+    columns:
+      - order_id

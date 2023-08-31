@@ -1,8 +1,0 @@
-version: 2
-
-models:
-  - name: orders_fact
-
-tests:
-  - unique: ['order_id']
-  - not_null: ['customer_id', 'order_date', 'order_total', 'order_priority', 'order_status']

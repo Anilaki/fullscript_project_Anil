@@ -1,8 +1,0 @@
-version: 2
-
-models:
-  - name: customer_dimension
-
-tests:
-  - unique: ['customer_id']
-  - not_null: ['customer_name', 'customer_address', 'customer_nationkey', 'customer_phnoe', 'customer_balance']

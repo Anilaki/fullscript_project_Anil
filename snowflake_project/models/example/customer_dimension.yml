@@ -1,0 +1,8 @@
+version: 2
+
+tests:
+  - name: unique_customer_ids
+    description: 'ensure customer ids are unique.'
+    columns:
+      - customer_id
+  
