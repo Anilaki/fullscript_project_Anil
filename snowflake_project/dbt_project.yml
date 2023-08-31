@@ -2,12 +2,12 @@ name: snowflake_project
 
 models:
   customer_dimension:
-    schema: tpch_sf1
+    schema: public
     enabled: true
     materialized: table
 
   orders_fact:
-    schema: tpch_sf1
+    schema: public
     enabled: true
     materialized: table
 
@@ -21,9 +21,3 @@ tests:
     enabled: true
 
 snapshot-paths: ['snapshots']
-
-on-run-start:
-  - echo 'Starting dbt run...'
-
-on-run-end:
-  - echo 'Finished dbt run.'
